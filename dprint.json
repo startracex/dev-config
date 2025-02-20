@@ -20,7 +20,10 @@
     "functionExpression.spaceAfterFunctionKeyword": true,
     "module.sortImportDeclarations": "maintain",
     "importDeclaration.forceSingleLine": true,
-    "exportDeclaration.forceSingleLine": false
+    "exportDeclaration.forceSingleLine": false,
+    "constructorType.spaceAfterNewKeyword": true,
+    "constructSignature.spaceAfterNewKeyword": true,
+    "arguments.preferHanging": "onlySingleItem"
   },
   "excludes": ["**/node_modules", "**/*.d.ts"]
 }
