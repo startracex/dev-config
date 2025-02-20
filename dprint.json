@@ -1,0 +1,26 @@
+{
+  "typescript": {
+    "indentWidth": 2,
+    "useTabs": false,
+    "semiColons": "prefer",
+    "quoteStyle": "alwaysDouble",
+    "quoteProps": "asNeeded",
+    "newLineKind": "lf",
+    "useBraces": "always",
+    "bracePosition": "sameLine",
+    "singleBodyPosition": "nextLine",
+    "trailingCommas": "onlyMultiLine",
+    "binaryExpression.operatorPosition": "sameLine",
+    "conditionalExpression.operatorPosition": "nextLine",
+    "arrowFunction.useParentheses": "force",
+    "typeLiteral.separatorKind": "semiColon",
+    "spaceSurroundingProperties": true,
+    "taggedTemplate.spaceBeforeLiteral": false,
+    "commentLine.forceSpaceAfterSlashes": true,
+    "functionExpression.spaceAfterFunctionKeyword": true,
+    "module.sortImportDeclarations": "maintain",
+    "importDeclaration.forceSingleLine": true,
+    "exportDeclaration.forceSingleLine": false
+  },
+  "excludes": ["**/node_modules", "**/*.d.ts"]
+}

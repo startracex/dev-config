@@ -1,0 +1,23 @@
+{
+  "name": "@startracex/dev-config",
+  "version": "0.0.0",
+  "description": "",
+  "type": "module",
+  "exports": {
+    "./biome": "./biome.json",
+    "./prettier": "./prettier.js",
+    "./*": "./*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/startracex/dev-config.git"
+  },
+  "keywords": [],
+  "author": "startracex",
+  "license": "MIT",
+  "files": [
+    "biome.json",
+    "dprint.json",
+    "prettier.js"
+  ]
+}
