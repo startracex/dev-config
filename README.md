@@ -33,12 +33,16 @@ dprint.json
 
 ## prettier
 
-.(prettierrc|prettier.config).(js|ts|mjs|mts)
+(.prettierrc|prettier.config).(js|ts|mjs|mts)
 
-```js
+```ts
 import config from "@startracex/dev-config/prettier";
+import type { Config } from "prettier";
 
-export default config;
+export default {
+  ...config,
+  /* ... */
+} satisfies Config;
 ```
 
 package.json
