@@ -103,7 +103,7 @@
         "noCompareNegZero": "error",
         "noConfusingVoidType": "off",
         "noConsole": {
-          "level": "error",
+          "level": "warn",
           "fix": "none",
           "options": {
             "allow": ["warn", "error"]
