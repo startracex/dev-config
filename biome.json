@@ -142,7 +142,10 @@
     }
   },
   "formatter": {
-    "useEditorconfig": true
+    "useEditorconfig": true,
+    "lineEnding": "lf",
+    "indentWidth": 2,
+    "indentStyle": "space"
   },
   "javascript": {
     "formatter": {
