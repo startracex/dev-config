@@ -25,5 +25,5 @@
     "constructSignature.spaceAfterNewKeyword": true,
     "arguments.preferHanging": "onlySingleItem"
   },
-  "excludes": ["**/node_modules", "**/*.d.ts"]
+  "excludes": ["**/node_modules", "**/*.d.ts", "**/*.d.mts", "**/*.d.cts"]
 }
