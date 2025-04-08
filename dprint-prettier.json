@@ -1,0 +1,18 @@
+{
+  "prettier": {
+    "tabWidth": 2,
+    "printWidth": 120,
+    "useTabs": false,
+    "semi": true,
+    "singleQuote": false,
+    "jsxSingleQuote": false,
+    "quoteProps": "as-needed",
+    "arrowParens": "always",
+    "trailingComma": "all",
+    "bracketSpacing": true,
+    "bracketSameLine": false,
+    "htmlWhitespaceSensitivity": "ignore",
+    "singleAttributePerLine": true
+  },
+  "excludes": ["**/node_modules", "**/*.d.ts", "**/*.d.mts", "**/*.d.cts"]
+}

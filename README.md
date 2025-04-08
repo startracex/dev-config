@@ -18,6 +18,8 @@ biome.json
 
 ## dprint
 
+### dprint-typescript
+
 dprint.json
 
 ```json
@@ -27,6 +29,27 @@ dprint.json
   ],
   "excludes": [
     "**/node_modules"
+  ],
+  "plugins": [
+    /* ... run `dprint config add typescript` */
+  ]
+}
+```
+
+### dprint-prettier
+
+dprint.json
+
+```json
+{
+  "extends": [
+    "./node_modules/@startracex/dev-config/dprint-prettier.json"
+  ],
+  "excludes": [
+    "**/node_modules"
+  ],
+  "plugins": [
+    /* ... run `dprint config add prettier` */
   ]
 }
 ```
