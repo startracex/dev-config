@@ -12,7 +12,17 @@ biome.json
 {
   "extends": [
     "@startracex/dev-config/biome"
-  ]
+  ],
+  "linter": {
+    "rules": {
+      /* ... linting rules override */
+    }
+  },
+  "formatter": {
+    "rules": {
+      /* ... formatting rules override */
+    }
+  }
 }
 ```
 
@@ -30,8 +40,11 @@ dprint.json
   "excludes": [
     "**/node_modules"
   ],
+  "typescript": {
+    /* ... formatting rules override */
+  },
   "plugins": [
-    /* ... run `dprint config add typescript` */
+    /* run `dprint config add typescript` */
   ]
 }
 ```
@@ -48,8 +61,11 @@ dprint.json
   "excludes": [
     "**/node_modules"
   ],
+  "prettier": {
+    /* ... formatting rules override */
+  },
   "plugins": [
-    /* ... run `dprint config add prettier` */
+    /* run `dprint config add prettier` */
   ]
 }
 ```
@@ -64,7 +80,7 @@ import type { Config } from "prettier";
 
 export default {
   ...config,
-  /* ... */
+  /* ... formatting rules override  */
 } satisfies Config;
 ```
 
