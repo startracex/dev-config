@@ -1,7 +1,7 @@
 {
   "name": "@startracex/dev-config",
   "version": "0.2.0",
-  "description": "",
+  "description": "formatting, linting rules extensions",
   "type": "module",
   "exports": {
     "./biome": "./biome.json",
@@ -12,7 +12,11 @@
     "type": "git",
     "url": "git+https://github.com/startracex/dev-config.git"
   },
-  "keywords": [],
+  "keywords": [
+    "biome",
+    "dprint",
+    "prettier"
+  ],
   "author": "startracex",
   "license": "MIT",
   "files": [
