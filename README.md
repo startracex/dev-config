@@ -66,7 +66,7 @@ dprint.json
 
 ## prettier
 
-(.prettierrc|prettier.config).(js|ts|mjs|mts)
+prettier.config.js
 
 ```ts
 import config from "@startracex/dev-config/prettier";
