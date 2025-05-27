@@ -13,5 +13,12 @@
     "htmlWhitespaceSensitivity": "ignore",
     "singleAttributePerLine": true
   },
-  "excludes": ["**/node_modules", "**/*.d.ts", "**/*.d.mts", "**/*.d.cts"]
+  "excludes": [
+    "**/node_modules",
+    "**/*.d.ts",
+    "**/*.d.mts",
+    "**/*.d.cts",
+    "**/package-lock.json",
+    "**/pnpm-lock.yaml"
+  ]
 }

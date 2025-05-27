@@ -2,7 +2,14 @@
   "$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
   "files": {
     "ignoreUnknown": false,
-    "ignore": ["**/node_modules", "**/*.d.ts", "**/*.d.mts", "**/*.d.cts"]
+    "ignore": [
+      "**/node_modules",
+      "**/*.d.ts",
+      "**/*.d.mts",
+      "**/*.d.cts",
+      "**/package-lock.json",
+      "**/pnpm-lock.yaml"
+    ]
   },
   "linter": {
     "rules": {
