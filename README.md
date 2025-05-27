@@ -37,9 +37,6 @@ dprint.json
   "extends": [
     "./node_modules/@startracex/dev-config/dprint.json"
   ],
-  "excludes": [
-    "**/node_modules"
-  ],
   "typescript": {
     /* ... formatting rules override */
   },
@@ -57,9 +54,6 @@ dprint.json
 {
   "extends": [
     "./node_modules/@startracex/dev-config/dprint-prettier.json"
-  ],
-  "excludes": [
-    "**/node_modules"
   ],
   "prettier": {
     /* ... formatting rules override */
