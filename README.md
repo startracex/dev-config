@@ -10,9 +10,7 @@ biome.json
 
 ```json
 {
-  "extends": [
-    "@startracex/dev-config/biome"
-  ],
+  "extends": ["@startracex/dev-config/biome"],
   "linter": {
     "rules": {
       /* ... linting rules override */
@@ -34,9 +32,7 @@ dprint.json
 
 ```json
 {
-  "extends": [
-    "./node_modules/@startracex/dev-config/dprint.json"
-  ],
+  "extends": ["./node_modules/@startracex/dev-config/dprint.json"],
   "typescript": {
     /* ... formatting rules override */
   },
@@ -52,9 +48,7 @@ dprint.json
 
 ```json
 {
-  "extends": [
-    "./node_modules/@startracex/dev-config/dprint-prettier.json"
-  ],
+  "extends": ["./node_modules/@startracex/dev-config/dprint-prettier.json"],
   "prettier": {
     /* ... formatting rules override */
   },
