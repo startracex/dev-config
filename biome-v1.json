@@ -1,15 +1,14 @@
 {
-  "$schema": "https://biomejs.dev/schemas/2.0.4/schema.json",
+  "$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
   "files": {
     "ignoreUnknown": false,
-    "includes": [
-      "**",
-      "!**/node_modules",
-      "!**/*.d.ts",
-      "!**/*.d.mts",
-      "!**/*.d.cts",
-      "!**/package-lock.json",
-      "!**/pnpm-lock.yaml"
+    "ignore": [
+      "**/node_modules",
+      "**/*.d.ts",
+      "**/*.d.mts",
+      "**/*.d.cts",
+      "**/package-lock.json",
+      "**/pnpm-lock.yaml"
     ]
   },
   "linter": {
@@ -21,21 +20,20 @@
         "noEmptyTypeParameters": "error",
         "noExtraBooleanCast": "error",
         "noForEach": "off",
+        "noMultipleSpacesInRegularExpressionLiterals": "error",
         "noUselessCatch": "error",
         "noUselessLoneBlockStatements": "error",
         "noUselessStringConcat": "off",
         "noUselessTypeConstraint": "error",
         "noThisInStatic": "off",
         "noVoid": "warn",
+        "noWith": "error",
         "useDateNow": "warn",
         "useFlatMap": "warn",
         "useLiteralKeys": "warn",
         "useOptionalChain": "warn",
         "useRegexLiterals": "warn",
-        "useSimpleNumberKeys": "warn",
-        "noAdjacentSpacesInRegex": "error",
-        "noFlatMapIdentity": "error",
-        "noArguments": "error"
+        "useSimpleNumberKeys": "warn"
       },
       "correctness": {
         "noChildrenProp": "error",
@@ -45,11 +43,14 @@
         "noConstructorReturn": "error",
         "noEmptyCharacterClassInRegex": "error",
         "noEmptyPattern": "error",
+        "noFlatMapIdentity": "error",
         "noGlobalObjectCalls": "error",
         "noInnerDeclarations": "error",
         "noInvalidBuiltinInstantiation": "error",
         "noInvalidConstructorSuper": "error",
         "noInvalidUseBeforeDeclaration": "error",
+        "noInvalidNewBuiltin": "error",
+        "noNewSymbol": "error",
         "noNonoctalDecimalEscape": "error",
         "noPrecisionLoss": "error",
         "noSelfAssign": "error",
@@ -63,11 +64,18 @@
         "noUnusedLabels": "error",
         "noUnusedVariables": "off",
         "noVoidTypeReturn": "error",
+        "useArrayLiterals": "error",
         "useValidForDirection": "error",
-        "useYield": "error",
-        "useValidTypeof": "error"
+        "useYield": "error"
       },
-      "nursery": {},
+      "nursery": {
+        "noCommonJs": "error",
+        "noEnum": "warn",
+        "noIrregularWhitespace": "error",
+        "noSubstr": "error",
+        "useConsistentMemberAccessibility": "error",
+        "useTrimStartEnd": "error"
+      },
       "performance": {
         "noAccumulatingSpread": "warn",
         "noDelete": "off",
@@ -77,6 +85,7 @@
         "noGlobalEval": "error"
       },
       "style": {
+        "noArguments": "error",
         "noInferrableTypes": "error",
         "noNamespace": "off",
         "noNonNullAssertion": "off",
@@ -90,13 +99,7 @@
         "useImportType": "error",
         "useShorthandFunctionType": "error",
         "useSingleVarDeclarator": "off",
-        "useTemplate": "off",
-        "useArrayLiterals": "error",
-        "noCommonJs": "error",
-        "noEnum": "warn",
-        "noSubstr": "error",
-        "useConsistentMemberAccessibility": "error",
-        "useTrimStartEnd": "error"
+        "useTemplate": "off"
       },
       "suspicious": {
         "noAsyncPromiseExecutor": "error",
@@ -141,8 +144,7 @@
         "useAwait": "error",
         "useGetterReturn": "error",
         "useNamespaceKeyword": "error",
-        "noWith": "error",
-        "noIrregularWhitespace": "error"
+        "useValidTypeof": "error"
       }
     }
   },

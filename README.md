@@ -10,6 +10,7 @@ biome.json
 
 ```json
 {
+  // "extends": ["@startracex/dev-config/biome-v1"], // biome v1
   "extends": ["@startracex/dev-config/biome"],
   "linter": {
     "rules": {

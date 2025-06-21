@@ -4,6 +4,7 @@
   "description": "formatting, linting rules extensions",
   "type": "module",
   "exports": {
+    "./biome-v1": "./biome-v1.json",
     "./biome": "./biome.json",
     "./prettier": "./prettier.js",
     "./*": "./*"
@@ -20,6 +21,7 @@
   "author": "startracex",
   "license": "MIT",
   "files": [
+    "biome-v1.json",
     "biome.json",
     "dprint.json",
     "dprint-prettier.json",
