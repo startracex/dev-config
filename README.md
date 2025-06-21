@@ -63,14 +63,13 @@ dprint.json
 
 prettier.config.js
 
-```ts
+```js
 import config from "@startracex/dev-config/prettier";
-import type { Config } from "prettier";
 
 export default {
   ...config,
   /* ... formatting rules override  */
-} satisfies Config;
+}
 ```
 
 package.json
