@@ -6,37 +6,29 @@ npm i -D @startracex/dev-config
 
 ## biome
 
-biome.json
+`biome.json`
 
 ```json
 {
   // "extends": ["@startracex/dev-config/biome-v1"], // biome v1
-  "extends": ["@startracex/dev-config/biome"],
-  "linter": {
-    "rules": {
-      /* ... linting rules override */
-    }
-  },
-  "formatter": {
-    "rules": {
-      /* ... formatting rules override */
-    }
-  }
+  "extends": ["@startracex/dev-config/biome"]
 }
 ```
 
 ## dprint
 
+dprint has two presets, typescript and prettier, they cannot coexist.
+
+All presets has no print width limit.
+
 ### dprint-typescript
 
-dprint.json
+`dprint.json`
 
 ```json
 {
   "extends": ["./node_modules/@startracex/dev-config/dprint.json"],
-  "typescript": {
-    /* ... formatting rules override */
-  },
+  "typescript": {},
   "plugins": [
     /* run `dprint config add typescript` */
   ]
@@ -45,34 +37,39 @@ dprint.json
 
 ### dprint-prettier
 
-dprint.json
+Prettier also format markdown, json etc, which can be suppressed by add markdown and json plugins.
+
+`dprint.json`
 
 ```json
 {
   "extends": ["./node_modules/@startracex/dev-config/dprint-prettier.json"],
   "prettier": {
-    /* ... formatting rules override */
+    "printWidth": 120
   },
+  "json": {},
   "plugins": [
-    /* run `dprint config add prettier` */
+    /* run `dprint config add prettier && dprint config add json` */
   ]
 }
 ```
 
 ## prettier
 
-prettier.config.js
+This preset has no print width limit.
+
+`prettier.config.js`
 
 ```js
 import config from "@startracex/dev-config/prettier";
 
 export default {
   ...config,
-  /* ... formatting rules override  */
+  printWidth: 120,
 };
 ```
 
-package.json
+`package.json`
 
 ```json
 {
@@ -82,9 +79,10 @@ package.json
 
 ## tsconfig
 
-tsconfig.json
+`tsconfig.json`
 
 ```json
 {
-  "extends": "@startracex/dev-config/tsconfig/lib",
+  "extends": "@startracex/dev-config/tsconfig/lib"
 }
+```
