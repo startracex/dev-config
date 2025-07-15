@@ -7,6 +7,9 @@
     "./biome-v1": "./biome-v1.json",
     "./biome": "./biome.json",
     "./prettier": "./prettier.js",
+    "./tsconfig/base": "./tsconfig/base.json",
+    "./tsconfig/lib.json": "./tsconfig/lib.json",
+    "./tsconfig/app.json": "./tsconfig/app.json",
     "./*": "./*"
   },
   "repository": {
@@ -16,11 +19,13 @@
   "keywords": [
     "biome",
     "dprint",
-    "prettier"
+    "prettier",
+    "tsconfig"
   ],
   "author": "startracex",
   "license": "MIT",
   "files": [
+    "tsconfig",
     "biome-v1.json",
     "biome.json",
     "dprint.json",

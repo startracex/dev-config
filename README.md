@@ -69,7 +69,7 @@ import config from "@startracex/dev-config/prettier";
 export default {
   ...config,
   /* ... formatting rules override  */
-}
+};
 ```
 
 package.json
@@ -79,3 +79,12 @@ package.json
   "prettier": "@startracex/dev-config/prettier"
 }
 ```
+
+## tsconfig
+
+tsconfig.json
+
+```json
+{
+  "extends": "@startracex/dev-config/tsconfig/lib",
+}
