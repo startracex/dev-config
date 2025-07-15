@@ -54,6 +54,41 @@ Prettier also format markdown, json etc, which can be suppressed by add markdown
 }
 ```
 
+## eslint
+
+### stylistic
+
+This preset only contains rules.
+
+This preset has no print width or indent limit.
+
+`eslint.config.js`
+
+```js
+import stylistic from "@stylistic/eslint-plugin";
+import stylisticRules from "@startracex/dev-config/stylistic";
+
+export default [
+  {
+    plugins: {
+      "@stylistic": stylistic,
+    },
+    rules: {
+      ...stylisticRules,
+    },
+  },
+];
+```
+
+`.eslintrc`
+
+```json
+{
+  "extends": ["./node_modules/@startracex/dev-config/eslint.config.js"],
+  "plugins": ["@stylistic"]
+}
+```
+
 ## prettier
 
 This preset has no print width limit.

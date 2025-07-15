@@ -10,6 +10,10 @@
     "./tsconfig/base": "./tsconfig/base.json",
     "./tsconfig/lib.json": "./tsconfig/lib.json",
     "./tsconfig/app.json": "./tsconfig/app.json",
+    "./stylistic": {
+      "import": "./stylistic.js",
+      "require": "./stylistic.cjs"
+    },
     "./*": "./*"
   },
   "repository": {
@@ -20,7 +24,8 @@
     "biome",
     "dprint",
     "prettier",
-    "tsconfig"
+    "tsconfig",
+    "stylistic"
   ],
   "author": "startracex",
   "license": "MIT",
@@ -28,8 +33,10 @@
     "tsconfig",
     "biome-v1.json",
     "biome.json",
-    "dprint.json",
     "dprint-prettier.json",
-    "prettier.js"
+    "dprint.json",
+    "prettier.js",
+    "stylistic.cjs",
+    "stylistic.js"
   ]
 }
