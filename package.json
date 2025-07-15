@@ -1,7 +1,7 @@
 {
   "name": "@startracex/dev-config",
   "version": "0.3.0",
-  "description": "formatting, linting rules extensions",
+  "description": "A set of preset configurations for development",
   "type": "module",
   "exports": {
     "./biome-v1": "./biome-v1.json",
