@@ -8,8 +8,8 @@
     "./biome": "./biome.json",
     "./prettier": "./prettier.js",
     "./tsconfig/base": "./tsconfig/base.json",
-    "./tsconfig/lib.json": "./tsconfig/lib.json",
-    "./tsconfig/app.json": "./tsconfig/app.json",
+    "./tsconfig/lib": "./tsconfig/lib.json",
+    "./tsconfig/app": "./tsconfig/app.json",
     "./stylistic": {
       "import": "./stylistic.js",
       "require": "./stylistic.cjs"
