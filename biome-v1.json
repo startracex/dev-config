@@ -113,7 +113,29 @@
           "level": "warn",
           "fix": "none",
           "options": {
-            "allow": ["warn", "error"]
+            "allow": [
+              "info",
+              "debug",
+              "warn",
+              "error",
+              "dir",
+              "time",
+              "timeEnd",
+              "timeLog",
+              "trace",
+              "assert",
+              "clear",
+              "count",
+              "countReset",
+              "group",
+              "groupEnd",
+              "table",
+              "dirxml",
+              "groupCollapsed",
+              "profile",
+              "profileEnd",
+              "timeStamp"
+            ]
           }
         },
         "noControlCharactersInRegex": "error",
