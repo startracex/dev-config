@@ -54,7 +54,7 @@ module.exports = {
         multilineDetection: "brackets",
       },
     ],
-    "@stylistic/multiline-comment-style": ["error", "starred-block"],
+    "@stylistic/multiline-comment-style": ["off"],
     "@stylistic/multiline-ternary": [
       "error",
       "always-multiline",
