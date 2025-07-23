@@ -28,7 +28,9 @@ All presets has no print width limit.
 ```json
 {
   "extends": ["./node_modules/@startracex/dev-config/dprint.json"],
-  "typescript": {},
+  "typescript": {
+    "lineWidth": 120
+  },
   "plugins": [
     /* run `dprint config add typescript` */
   ]
