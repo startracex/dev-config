@@ -2,8 +2,8 @@
   "$schema": "https://json.schemastore.org/tsconfig",
   "compilerOptions": {
     "target": "ESNext",
-    "moduleDetection": "force",
     "module": "NodeNext",
+    "moduleDetection": "force",
     "moduleResolution": "NodeNext",
     "customConditions": ["development", "import", "module"],
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
