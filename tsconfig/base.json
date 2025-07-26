@@ -10,6 +10,7 @@
     "skipDefaultLibCheck": true,
     "skipLibCheck": true,
     "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
     "useDefineForClassFields": false,
     "experimentalDecorators": true,
     "resolveJsonModule": true,
