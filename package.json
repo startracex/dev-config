@@ -1,6 +1,6 @@
 {
   "name": "@startracex/dev-config",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "description": "A set of preset configurations for development",
   "type": "module",
   "exports": {
