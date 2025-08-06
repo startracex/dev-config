@@ -4,13 +4,13 @@
 npm i -D @startracex/dev-config
 ```
 
-## biome
+## Biome
 
 `biome.json`
 
-```json
+```jsonc
 {
-  // "extends": ["@startracex/dev-config/biome-v1"], // biome v1
+  // "extends": ["@startracex/dev-config/biome-v1"], // Biome v1
   "extends": ["@startracex/dev-config/biome"]
 }
 ```
@@ -25,7 +25,7 @@ All presets has no print width limit.
 
 `dprint.json`
 
-```json
+```jsonc
 {
   "extends": ["./node_modules/@startracex/dev-config/dprint.json"],
   "typescript": {
@@ -43,7 +43,7 @@ Prettier also format markdown, json etc, which can be suppressed by add markdown
 
 `dprint.json`
 
-```json
+```jsonc
 {
   "extends": ["./node_modules/@startracex/dev-config/dprint-prettier.json"],
   "prettier": {
@@ -56,9 +56,9 @@ Prettier also format markdown, json etc, which can be suppressed by add markdown
 }
 ```
 
-## eslint
+## ESLint
 
-### stylistic
+### Stylistic
 
 This preset only contains rules.
 
@@ -91,7 +91,7 @@ export default [
 }
 ```
 
-## prettier
+## Prettier
 
 This preset has no print width limit.
 
@@ -114,12 +114,24 @@ export default {
 }
 ```
 
-## tsconfig
+## TypeScript
+
+### Lib mode
 
 `tsconfig.json`
 
 ```json
 {
   "extends": "@startracex/dev-config/tsconfig/lib"
+}
+```
+
+### App mode
+
+`tsconfig.json`
+
+```json
+{
+  "extends": "@startracex/dev-config/tsconfig/app"
 }
 ```
