@@ -3,7 +3,6 @@
   "files": {
     "ignoreUnknown": false,
     "includes": [
-      "**",
       "!**/node_modules",
       "!**/*.d.ts",
       "!**/*.d.mts",
