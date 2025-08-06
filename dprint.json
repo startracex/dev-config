@@ -17,13 +17,19 @@
     "spaceSurroundingProperties": true,
     "taggedTemplate.spaceBeforeLiteral": false,
     "commentLine.forceSpaceAfterSlashes": true,
+    "functionDeclaration.spaceBeforeParentheses": false,
+    "functionExpression.spaceBeforeParentheses": false,
     "functionExpression.spaceAfterFunctionKeyword": true,
+    "setAccessor.spaceBeforeParentheses": false,
+    "getAccessor.spaceBeforeParentheses": false,
+    "method.spaceBeforeParentheses": false,
     "module.sortImportDeclarations": "maintain",
-    "importDeclaration.forceSingleLine": true,
-    "exportDeclaration.forceSingleLine": false,
+    "importDeclaration.sortNamedImports": "maintain",
+    "importDeclaration.spaceSurroundingNamedImports": true,
+    "exportDeclaration.sortNamedExports": "maintain",
+    "exportDeclaration.spaceSurroundingNamedExports": true,
     "constructorType.spaceAfterNewKeyword": true,
-    "constructSignature.spaceAfterNewKeyword": true,
-    "arguments.preferHanging": "onlySingleItem"
+    "constructSignature.spaceAfterNewKeyword": true
   },
   "excludes": [
     "**/node_modules",
