@@ -1,7 +1,6 @@
 {
   "$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
   "files": {
-    "ignoreUnknown": false,
     "ignore": [
       "**/node_modules",
       "**/*.d.ts",
@@ -9,25 +8,26 @@
       "**/*.d.cts",
       "**/package-lock.json",
       "**/pnpm-lock.yaml"
-    ]
+    ],
+    "ignoreUnknown": false
   },
   "linter": {
     "rules": {
       "recommended": false,
       "complexity": {
-        "useArrowFunction": "warn",
         "noBannedTypes": "off",
         "noEmptyTypeParameters": "error",
         "noExtraBooleanCast": "error",
         "noForEach": "off",
         "noMultipleSpacesInRegularExpressionLiterals": "error",
+        "noThisInStatic": "off",
         "noUselessCatch": "error",
         "noUselessLoneBlockStatements": "error",
         "noUselessStringConcat": "off",
         "noUselessTypeConstraint": "error",
-        "noThisInStatic": "off",
         "noVoid": "warn",
         "noWith": "error",
+        "useArrowFunction": "warn",
         "useDateNow": "warn",
         "useFlatMap": "warn",
         "useLiteralKeys": "warn",
@@ -37,9 +37,9 @@
       },
       "correctness": {
         "noChildrenProp": "error",
-        "noConstAssign": "error",
         "noConstantCondition": "error",
         "noConstantMathMinMaxClamp": "error",
+        "noConstAssign": "error",
         "noConstructorReturn": "error",
         "noEmptyCharacterClassInRegex": "error",
         "noEmptyPattern": "error",
@@ -48,8 +48,8 @@
         "noInnerDeclarations": "error",
         "noInvalidBuiltinInstantiation": "error",
         "noInvalidConstructorSuper": "error",
-        "noInvalidUseBeforeDeclaration": "error",
         "noInvalidNewBuiltin": "error",
+        "noInvalidUseBeforeDeclaration": "error",
         "noNewSymbol": "error",
         "noNonoctalDecimalEscape": "error",
         "noPrecisionLoss": "error",
@@ -89,8 +89,8 @@
         "noInferrableTypes": "error",
         "noNamespace": "off",
         "noNonNullAssertion": "off",
-        "noUnusedTemplateLiteral": "off",
         "noParameterAssign": "off",
+        "noUnusedTemplateLiteral": "off",
         "useAsConstAssertion": "error",
         "useBlockStatements": "warn",
         "useConsistentArrayType": "error",
@@ -102,16 +102,16 @@
         "useTemplate": "off"
       },
       "suspicious": {
-        "noAsyncPromiseExecutor": "error",
-        "noAssignInExpressions": "off",
         "noApproximativeNumericConstant": "error",
+        "noAssignInExpressions": "off",
+        "noAsyncPromiseExecutor": "error",
         "noCatchAssign": "error",
         "noClassAssign": "error",
         "noCompareNegZero": "error",
         "noConfusingVoidType": "off",
         "noConsole": {
-          "level": "warn",
           "fix": "none",
+          "level": "warn",
           "options": {
             "allow": [
               "info",
@@ -151,8 +151,8 @@
         "noFallthroughSwitchClause": "off",
         "noFunctionAssign": "error",
         "noGlobalAssign": "error",
-        "noImportAssign": "error",
         "noImplicitAnyLet": "off",
+        "noImportAssign": "error",
         "noMisleadingCharacterClass": "error",
         "noMisleadingInstantiator": "error",
         "noMisrefactoredShorthandAssign": "error",
@@ -171,10 +171,10 @@
     }
   },
   "formatter": {
-    "useEditorconfig": true,
-    "lineEnding": "lf",
+    "indentStyle": "space",
     "indentWidth": 2,
-    "indentStyle": "space"
+    "lineEnding": "lf",
+    "useEditorconfig": true
   },
   "javascript": {
     "formatter": {

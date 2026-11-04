@@ -9,6 +9,7 @@ export default {
   trailingComma: "all",
   bracketSpacing: true,
   bracketSameLine: false,
+  objectWrap: "preserve",
   htmlWhitespaceSensitivity: "ignore",
   singleAttributePerLine: true,
 };
