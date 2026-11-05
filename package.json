@@ -7,6 +7,8 @@
     "./biome-v1": "./biome-v1.json",
     "./biome": "./biome.json",
     "./prettier": "./prettier.js",
+    "./oxfmt": "./oxfmt.js",
+    "./oxlint": "./oxlint.json",
     "./tsconfig/base": "./tsconfig/base.json",
     "./tsconfig/lib": "./tsconfig/lib.json",
     "./tsconfig/app": "./tsconfig/app.json",
@@ -24,6 +26,8 @@
     "biome",
     "dprint",
     "prettier",
+    "oxfmt",
+    "oxlint",
     "tsconfig",
     "stylistic"
   ],
@@ -36,6 +40,8 @@
     "dprint-prettier.json",
     "dprint.json",
     "prettier.js",
+    "oxfmt.js",
+    "oxlint.json",
     "stylistic.cjs",
     "stylistic.js"
   ]

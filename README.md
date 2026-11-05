@@ -8,7 +8,7 @@ npm i -D @startracex/dev-config
 
 `biome.json`
 
-```jsonc
+```json
 {
   // "extends": ["@startracex/dev-config/biome-v1"], // Biome v1
   "extends": ["@startracex/dev-config/biome"]
@@ -25,7 +25,7 @@ All presets has no print width limit.
 
 `dprint.json`
 
-```jsonc
+```json
 {
   "extends": ["./node_modules/@startracex/dev-config/dprint.json"],
   "typescript": {
@@ -43,7 +43,7 @@ Prettier also format markdown, json etc, which can be suppressed by add markdown
 
 `dprint.json`
 
-```jsonc
+```json
 {
   "extends": ["./node_modules/@startracex/dev-config/dprint-prettier.json"],
   "prettier": {
@@ -93,17 +93,12 @@ export default [
 
 ## Prettier
 
-This preset has no print width limit.
-
 `prettier.config.js`
 
 ```js
 import config from "@startracex/dev-config/prettier";
 
-export default {
-  ...config,
-  printWidth: 120,
-};
+export default config;
 ```
 
 `package.json`
@@ -112,6 +107,38 @@ export default {
 {
   "prettier": "@startracex/dev-config/prettier"
 }
+```
+
+## Oxfmt
+
+`oxfmt.config.ts`
+
+```ts
+import config from "@startracex/dev-config/oxfmt";
+import { defineConfig } from "oxfmt";
+
+export default defineConfig(config);
+```
+
+## Oxlint
+
+`.oxlintrc.json`
+
+```json
+{
+  "extends": ["./node_modules/@startracex/dev-config/oxlint.json"]
+}
+```
+
+`oxlint.config.ts`
+
+```ts
+import config from "@startracex/dev-config/oxlint.json" with { type: "json" };
+import { defineConfig } from "oxlint";
+
+export default defineConfig({
+  extends: [config],
+});
 ```
 
 ## TypeScript
